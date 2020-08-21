@@ -80,12 +80,12 @@ divTodoList.addEventListener('click', (event) => {
       const completado = elemento.classList.contains('completed');
 
       switch (filtro) {
-        case 'Pendientes':
+        case 'Pending':
           if (completado) {
             elemento.classList.add('hidden');
           }
           break;
-        case 'Completados':
+        case 'Completed':
           if (!completado) {
             elemento.classList.add('hidden')
           }
